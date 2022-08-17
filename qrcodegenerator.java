@@ -11,10 +11,9 @@ import java.net.URL;
 public class qrcodegenerator  {
 
     public static void main(String[] args) throws Exception {
-        String source = "https://www.instagram.com/aniket__sharma45/";
-        URL myurl = new URL("https://www.google.com/");
+        String source = "     ";  //custom text or url to be provided by user within " " 
         ByteArrayOutputStream out = QRCode.from(source).to(ImageType.JPG).stream();
-        File file = new File("C:\\Users\\aniru\\OneDrive\\Pictures\\qrcodes\\qr.jpeg");
+        File file = new File("  ");// provide path to destination file where generated qr code will be stored 
         FileOutputStream fout = new FileOutputStream(file);
         fout.write(out.toByteArray());
         fout.flush();
